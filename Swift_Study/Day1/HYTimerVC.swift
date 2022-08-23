@@ -18,13 +18,14 @@ class HYTimerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configUI()
+//        MBProgressHUD.showTipMessage(inView: "测试", timer: 5)
     }
     func configUI(){
         self.topView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: HYWidth, height: HYHeight/2.0))
         self.topView?.backgroundColor = UIColor.red
         self.view.addSubview(self.topView!)
         
-        self.timeLab = UILabel.init(frame: CGRect.init(x: 0, y: (self.topView!.frame.size.height-50)/2.0, width: HYWidth, height: 50))
+        self.timeLab = UILabel.init(frame: CGRect.init(x: 0, y: (self.topView!.height-50)/2.0, width: HYWidth, height: 50))
         self.timeLab?.font = UIFont.systemFont(ofSize: 58)
         self.timeLab?.textColor = UIColor.white
         self.timeLab?.textAlignment = NSTextAlignment.center
@@ -32,7 +33,8 @@ class HYTimerVC: UIViewController {
         self.view.addSubview(self.timeLab!)
         
         let startBtn = UIButton.init(type: .custom)
-        startBtn.frame = CGRect.init(x: 0, y: HYHeight-self.topView!.frame.size.height, width: HYWidth/2.0, height: HYHeight/2.0)
+//        startBtn.frame = CGRect.init(x: 0, y: HYHeight-self.topView!.frame.size.height, width: HYWidth/2.0, height: HYHeight/2.0)
+        startBtn.frame = CGRect.init(x: 0, y: self.topView!.height, width: HYWidth/2.0, height: HYHeight/2.0)
         startBtn .setTitle("开始", for: .normal)
         startBtn.setTitleColor(UIColor.black, for: .normal)
         startBtn.backgroundColor = UIColor.yellow
@@ -41,7 +43,7 @@ class HYTimerVC: UIViewController {
         self.startBtn = startBtn
         
         let againBtn = UIButton.init(type: .custom)
-        againBtn.frame = CGRect.init(x: HYWidth/2.0, y: HYHeight-self.topView!.frame.size.height, width: HYWidth/2.0, height: HYHeight/2.0)
+        againBtn.frame = CGRect.init(x: HYWidth/2.0, y: HYHeight-self.topView!.height, width: HYWidth/2.0, height: HYHeight/2.0)
         againBtn.setTitle("重置", for: .normal)
         againBtn.setTitleColor(UIColor.red, for: .normal)
         againBtn.backgroundColor = UIColor .orange

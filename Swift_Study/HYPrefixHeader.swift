@@ -23,6 +23,21 @@ let HYWidth = UIScreen.main.bounds.size.width
 let HYHeight = UIScreen.main.bounds.size.height
 let HYBounds = UIScreen.main.bounds
 
+//状态栏和导航栏高度
+//#define IS_IPHONEXSYSTEM HYSTATUS_BAR_HEIGHT == 44 ? YES : NO
+let HYSTATUS_BAR_HEIGHT = UIApplication.shared.statusBarFrame.size.height
+let HYNAVIGATION_BAR_HEIGHT = 44          //NavBar高度
+let HYSTATUS_AND_NAVIGATION_HEIGHT = Int(HYSTATUS_BAR_HEIGHT)+Int(HYNAVIGATION_BAR_HEIGHT)
+let HYTABBAR_HEIGHT = (IS_IPHONEXSYSTEM ? 83 : 49)  //TabBar高度
+let HYIPHONEX_COMPARE_TABHEIGHT = (IS_IPHONEXSYSTEM ? 34 : 0)  //iPhoneXTabBar高于的值
+let IS_IPHONEXSYSTEM:Bool = {
+    var isPhoneX = false
+    if #available(iOS 11.0, *) {
+        isPhoneX = (UIApplication.shared.delegate?.window??.safeAreaInsets.bottom ?? 0.0) > 0.0
+    }
+    return isPhoneX
+}()
+
 //弱引用
 //#define HYWeakSelf(type)  __weak typeof(type) weak##type = type;
 //#define HYBlockSelf(type) __block typeof(type) block##type = type;
