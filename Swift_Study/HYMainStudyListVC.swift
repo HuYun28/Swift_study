@@ -10,7 +10,7 @@ import UIKit
 class HYMainStudyListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
 //    var tableView:UITableView?
-    let array = ["Timer","Table","Q","Q","Q","Q"]
+    let array = ["Timer","Table","Video","Q","Q","Q"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -42,6 +42,9 @@ class HYMainStudyListVC: UIViewController,UITableViewDelegate,UITableViewDataSou
         }else if indexPath.row==1 {
             let tableVC = HYTableVC.init(nibName: "HYTableVC", bundle: nil)
             self.navigationController?.pushViewController(tableVC, animated: true)
+        }else if indexPath.row==2 {
+            let videoVC = HYVideoListVC.init(nibName: "HYVideoListVC", bundle: nil)
+            self.navigationController?.pushViewController(videoVC, animated: true)
         }
     }
 }
