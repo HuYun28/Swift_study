@@ -30,6 +30,11 @@
 		2A25085F28B3350500A4B0DA /* HYTimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A25085D28B3350500A4B0DA /* HYTimerVC.swift */; };
 		2A25086028B3350500A4B0DA /* HYTimerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A25085E28B3350500A4B0DA /* HYTimerVC.xib */; };
 		2A25086328B350FA00A4B0DA /* HYPrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A25086228B350FA00A4B0DA /* HYPrefixHeader.swift */; };
+		2AB6D93129AC7F3200591432 /* HYCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB6D92F29AC7F3200591432 /* HYCollectionVC.swift */; };
+		2AB6D93229AC7F3200591432 /* HYCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB6D93029AC7F3200591432 /* HYCollectionVC.xib */; };
+		2AB6D93429AC804A00591432 /* HYCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB6D93329AC804A00591432 /* HYCollectionModel.swift */; };
+		2AB6D93729AC8B6500591432 /* HYCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB6D93529AC8B6500591432 /* HYCollectionCell.swift */; };
+		2AB6D93829AC8B6500591432 /* HYCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB6D93629AC8B6500591432 /* HYCollectionCell.xib */; };
 		E0EB1AE22586DA8E8728E684 /* Pods_Swift_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A02B10A04EF75D8B3572D4 /* Pods_Swift_Study.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +88,11 @@
 		2A25085E28B3350500A4B0DA /* HYTimerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HYTimerVC.xib; sourceTree = "<group>"; };
 		2A25086128B34D3100A4B0DA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2A25086228B350FA00A4B0DA /* HYPrefixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYPrefixHeader.swift; sourceTree = "<group>"; };
+		2AB6D92F29AC7F3200591432 /* HYCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCollectionVC.swift; sourceTree = "<group>"; };
+		2AB6D93029AC7F3200591432 /* HYCollectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HYCollectionVC.xib; sourceTree = "<group>"; };
+		2AB6D93329AC804A00591432 /* HYCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCollectionModel.swift; sourceTree = "<group>"; };
+		2AB6D93529AC8B6500591432 /* HYCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYCollectionCell.swift; sourceTree = "<group>"; };
+		2AB6D93629AC8B6500591432 /* HYCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HYCollectionCell.xib; sourceTree = "<group>"; };
 		38A02B10A04EF75D8B3572D4 /* Pods_Swift_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		414C0560A973DFCEEB6CFF10 /* Pods-Swift_Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_Study.release.xcconfig"; path = "Target Support Files/Pods-Swift_Study/Pods-Swift_Study.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,14 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A01E0D329A853D90013DD02 /* Dah3 */ = {
+		2A01E0D329A853D90013DD02 /* Day3 */ = {
 			isa = PBXGroup;
 			children = (
 				2A01E0D729A857D70013DD02 /* HYVideoListVC.swift */,
 				2A01E0D829A857D70013DD02 /* HYVideoListVC.xib */,
 				2A01E0DB29A860FF0013DD02 /* HYVideoListCell.swift */,
 			);
-			path = Dah3;
+			path = Day3;
 			sourceTree = "<group>";
 		};
 		2A16F35228B47F5900BB76F2 /* HYTools */ = {
@@ -179,7 +189,8 @@
 		2A25082728B31F3600A4B0DA /* Swift_Study */ = {
 			isa = PBXGroup;
 			children = (
-				2A01E0D329A853D90013DD02 /* Dah3 */,
+				2AB6D92E29AC7F0400591432 /* Day4 */,
+				2A01E0D329A853D90013DD02 /* Day3 */,
 				2A16F35A28B49DE000BB76F2 /* Day2 */,
 				2A16F35228B47F5900BB76F2 /* HYTools */,
 				2A25085C28B334E600A4B0DA /* Day1 */,
@@ -222,6 +233,18 @@
 				2A25085E28B3350500A4B0DA /* HYTimerVC.xib */,
 			);
 			path = Day1;
+			sourceTree = "<group>";
+		};
+		2AB6D92E29AC7F0400591432 /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				2AB6D92F29AC7F3200591432 /* HYCollectionVC.swift */,
+				2AB6D93029AC7F3200591432 /* HYCollectionVC.xib */,
+				2AB6D93329AC804A00591432 /* HYCollectionModel.swift */,
+				2AB6D93529AC8B6500591432 /* HYCollectionCell.swift */,
+				2AB6D93629AC8B6500591432 /* HYCollectionCell.xib */,
+			);
+			path = Day4;
 			sourceTree = "<group>";
 		};
 		DAD72D00A4D7533B8BB586D1 /* Pods */ = {
@@ -348,11 +371,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A01E0DF29A89A7F0013DD02 /* emoji zone.mp4 in Resources */,
+				2AB6D93229AC7F3200591432 /* HYCollectionVC.xib in Resources */,
 				2A25083528B31F3700A4B0DA /* LaunchScreen.storyboard in Resources */,
 				2A25086028B3350500A4B0DA /* HYTimerVC.xib in Resources */,
 				2A25083228B31F3700A4B0DA /* Assets.xcassets in Resources */,
 				2A25085B28B320E600A4B0DA /* HYMainStudyListVC.xib in Resources */,
 				2A16F36228B4A6CC00BB76F2 /* HYListCell.xib in Resources */,
+				2AB6D93829AC8B6500591432 /* HYCollectionCell.xib in Resources */,
 				2A16F35E28B49E0B00BB76F2 /* HYTableVC.xib in Resources */,
 				2A25083028B31F3600A4B0DA /* Main.storyboard in Resources */,
 				2A01E0DA29A857D70013DD02 /* HYVideoListVC.xib in Resources */,
@@ -423,15 +448,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A16F36128B4A6CC00BB76F2 /* HYListCell.swift in Sources */,
+				2AB6D93129AC7F3200591432 /* HYCollectionVC.swift in Sources */,
 				2A25085A28B320E600A4B0DA /* HYMainStudyListVC.swift in Sources */,
 				2A16F35D28B49E0B00BB76F2 /* HYTableVC.swift in Sources */,
 				2A16F35928B4869500BB76F2 /* UIView+HYTools.m in Sources */,
 				2A25082928B31F3600A4B0DA /* AppDelegate.swift in Sources */,
+				2AB6D93429AC804A00591432 /* HYCollectionModel.swift in Sources */,
 				2A16F35628B484A800BB76F2 /* MBProgressHUD+HYHUD.m in Sources */,
 				2A16F36428B4AA3500BB76F2 /* HYTableModel.swift in Sources */,
 				2A01E0DC29A860FF0013DD02 /* HYVideoListCell.swift in Sources */,
 				2A25085F28B3350500A4B0DA /* HYTimerVC.swift in Sources */,
 				2A25086328B350FA00A4B0DA /* HYPrefixHeader.swift in Sources */,
+				2AB6D93729AC8B6500591432 /* HYCollectionCell.swift in Sources */,
 				2A01E0D929A857D70013DD02 /* HYVideoListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

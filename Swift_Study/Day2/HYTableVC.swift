@@ -46,7 +46,7 @@ class HYTableVC: UIViewController,UITableViewDelegate,UITableViewDataSource  {
     lazy var tableView:UITableView = {
         let tableView = UITableView.init(frame: CGRect.init(x: 0, y: HYSTATUS_AND_NAVIGATION_HEIGHT, width: Int(HYWidth), height: Int(HYHeight)-HYSTATUS_AND_NAVIGATION_HEIGHT-HYIPHONEX_COMPARE_TABHEIGHT), style:.plain)
         tableView.separatorStyle = .none
-        tableView.backgroundColor = UIColor.red
+        tableView.backgroundColor = UIColor.white
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
